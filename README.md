@@ -17,10 +17,6 @@ bower install --save-dev dynamic-images
 ## Usage
 
 ```html
-<script src="bower_components/dynamic-images/dist/dynamic-images.min.js></script>
-```
-
-```html
 <img src="" data-dynamic/>
 <img src="" data-dynamic data-width="500"/>
 <img src="" data-dynamic data-height="200"/>
@@ -28,13 +24,26 @@ bower install --save-dev dynamic-images
 <img src="" data-dynamic data-widt="500" data-height="200" data-background="yellow"/>
 ```
 
+```html
+<script src="bower_components/dynamic-images/dist/dynamic-images.min.js></script>
+```
+
+```html
+<script>
+	new DynamicImages({
+		width: 200,
+		height: 200
+	});
+</script>
+```
+
 ## Options
 
 When not specified the default value is used.
 
-* `data-width` defaults to `150px`
-* `data-height` defaults to `150px`
-* `data-background` defaults to `#ccc`
+* `width` defaults to `150px`
+* `height` defaults to `150px`
+* `background` defaults to `#ccc`
 
 ## License 
 
