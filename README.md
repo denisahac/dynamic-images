@@ -1,6 +1,10 @@
-# Dynamic <img> `src` genarator
+# Dynamic Image Source Generator
 
 A Javascript utility that helps generate <img> `src`. It uses the HTML5 Canvas API to generate the image BLOB.
+
+## Screenshot
+
+![Dynamic Images](screenshot.png)
 
 ## Installation
 
