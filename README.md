@@ -1,4 +1,4 @@
-# Dynamic Image Source Generator
+# Image Source Generator
 
 A Javascript utility for generating an `<img>` source . It uses the HTML5 Canvas API to generate the image BLOB.
 
