@@ -25,7 +25,7 @@ bower install --save-dev dynamic-images
 ```
 
 ```html
-<script src="bower_components/dynamic-images/dist/dynamic-images.min.js></script>
+<script src="bower_components/dynamic-images/dist/dynamic-images.min.js"></script>
 ```
 
 ```html
