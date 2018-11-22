@@ -1,6 +1,6 @@
 # Dynamic Image Source Generator
 
-A Javascript utility that helps generate <img> `src`. It uses the HTML5 Canvas API to generate the image BLOB.
+A Javascript utility for generating an `<img>` source . It uses the HTML5 Canvas API to generate the image BLOB.
 
 ## Screenshot
 
@@ -38,4 +38,4 @@ When not specified the default value is used.
 
 ## License 
 
-[GNUv3](https://www.gnu.org/licenses/gpl-3.0.en.html)
+[GNU](https://www.gnu.org/licenses/gpl-3.0.en.html)
