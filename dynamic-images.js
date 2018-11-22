@@ -84,14 +84,34 @@ class DynamicImages {
 		this.ctx.fillRect(0, 0, width, height);
 
 		// Draw text
+
 		this.ctx.font = '40px Monospace';
+		this.ctx.font = this.getFont(width, height);
 		this.ctx.textAlign = 'center';
+		this.ctx.textBaseline = 'middle';
 		this.ctx.strokeText(this.getText(width, height), width / 2, height / 2);
 
 		// Assign BLOB to the <img> src
 		img.src = this.canvas.toDataURL();
 
 		this.reset();
+	}
+
+	/**
+	 * Return the calculated font.
+	 *
+	 * @private	
+	 * @param {int} width The width of the canvas.
+	 * @param {int} height The height of the canvas.
+	 * @return {string} The calculated font.
+	 */
+	getFont(width, height) {
+		let ratio = 40 / this.options.width;
+		let size = width * ratio;
+		let textHeight = size * 1.2 // The default line height.
+
+		if(textHeight >= (height / 3)) size = (width / 2) * ratio; 
+		return (size | 0) + 'px Monospace';
 	}
 
 	/**
